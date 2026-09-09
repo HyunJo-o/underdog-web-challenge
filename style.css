@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(185, 225, 238);  /*페이지 전체 배경색*/
+    color: rgb(80, 75, 75);  /*글자색*/
+}
+
+section{
+    background-color: white;  /*카드 안쪽 배경*/
+    padding: 20px;   /*안쪽 여백*/
+    margin: 20px 0;   /*바깥쪽 여백*/
+    border-radius: 12px;   /*모서리 둥글게*/
+}
+
+h1{
+    color: rgb(80, 75, 75); /*글자색*/
+    font-size: larger;  /*글자크기*/
+}
+
+h2{
+    color: rgb(80, 75, 75);
+    font-size: large;
+}
+
+li{
+    color: rgb(80, 75, 75);
+    font-size: medium;
+}
+
+p{
+    color:rgb(80, 75, 75);
+    font-size: medium;
+}
+
+img{
+    width: 120px;  /* 너비 고정 */
+    height: 120px;  /* 높이 고정 */
+    border: 2px solid white;
+    border-radius: 50%;  
+    object-fit: cover; /*이미지 비율 유지*/
+}
+
+a{
+    color: mediumslateblue;
+    font-style: italic;
+    font-weight: bold;
+}
