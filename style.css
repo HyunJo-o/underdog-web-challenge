@@ -5,7 +5,7 @@ body{
 
 section{
     background-color: white;  /*카드 안쪽 배경*/
-    padding: 20px;   /*안쪽 여백*/
+    padding: 30px 24px;   /*안쪽 여백*/
     margin: 20px 0;   /*바깥쪽 여백*/
     border-radius: 12px;   /*모서리 둥글게*/
 }
@@ -42,4 +42,24 @@ a{
     color: mediumslateblue;
     font-style: italic;
     font-weight: bold;
+}
+
+.container{
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.profile{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+@media(max-width:600px){
+    .profile{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
 }
