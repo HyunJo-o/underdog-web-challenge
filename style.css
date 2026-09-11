@@ -1,76 +1,100 @@
 body {
-    background-color: rgb(185, 225, 238);
-    /*페이지 전체 배경색*/
-    color: rgb(80, 75, 75);
-    /*글자색*/
+  background-color: rgb(185, 225, 238);
+  /*페이지 전체 배경색*/
+  color: rgb(80, 75, 75);
+  /*글자색*/
 }
 
 section {
-    background-color: white;
-    /*카드 안쪽 배경*/
-    padding: 30px 24px;
-    /*안쪽 여백*/
-    margin: 20px 0;
-    /*바깥쪽 여백*/
-    border-radius: 12px;
-    /*모서리 둥글게*/
+  background-color: white;
+  /*카드 안쪽 배경*/
+  padding: 30px 24px;
+  /*안쪽 여백*/
+  margin: 20px 0;
+  /*바깥쪽 여백*/
+  border-radius: 12px;
+  /*모서리 둥글게*/
 }
 
 h1 {
-    color: rgb(80, 75, 75);
-    /*글자색*/
-    font-size: larger;
-    /*글자크기*/
+  color: rgb(80, 75, 75);
+  /*글자색*/
+  font-size: larger;
+  /*글자크기*/
 }
 
 h2 {
-    color: rgb(80, 75, 75);
-    font-size: large;
+  color: rgb(80, 75, 75);
+  font-size: large;
 }
 
 li {
-    color: rgb(80, 75, 75);
-    font-size: medium;
+  color: rgb(80, 75, 75);
+  font-size: medium;
 }
 
 p {
-    color: rgb(80, 75, 75);
-    font-size: medium;
+  color: rgb(80, 75, 75);
+  font-size: medium;
 }
 
 img {
-    width: 120px;
-    /* 너비 고정 */
-    height: 120px;
-    /* 높이 고정 */
-    border: 2px solid white;
-    border-radius: 50%;
-    object-fit: cover;
-    /*이미지 비율 유지*/
+  width: 120px;
+  /* 너비 고정 */
+  height: 120px;
+  /* 높이 고정 */
+  border: 2px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+  /*이미지 비율 유지*/
 }
 
 a {
-    color: mediumslateblue;
-    font-style: italic;
-    font-weight: bold;
+  color: mediumslateblue;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .container {
-    max-width: 900px;
-    width: 90%;
-    margin: 0 auto;
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .profile {
-    display: flex;
-    gap: 24px;
-    align-items: center;
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }
 
-@media(max-width:600px) {
-    .profile {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+body.dark-mode,
+body.dark-mode .container {
+  background-color: rgb(43, 42, 42) !important; /* 다크모드 전체 배경색 */
+  color: whitesmoke !important; /* 다크모드 글자색 */
+}
+
+body.dark-mode section {
+  background-color: rgb(79, 75, 75) !important;
+  color: whitesmoke !important;
+}
+/*프로필 속 div 배경 투명하게*/
+body.dark-mode .profile div {
+  background-color: transparent !important;
+}
+
+/* 다크 모드 글자 색상 고정 */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode ul {
+  color: whitesmoke !important;
 }
